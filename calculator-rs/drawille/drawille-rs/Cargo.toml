@@ -1,0 +1,25 @@
+[package]
+name = "drawille"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "basic"
+path = "src/bin/basic.rs"
+
+[[bin]]
+name = "turtle"
+path = "src/bin/turtle.rs"
+
+[[bin]]
+name = "cube"
+path = "src/bin/cube.rs"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "speed-test"
+harness = false
